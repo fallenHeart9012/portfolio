@@ -1,0 +1,32 @@
+* {
+    margin: 100;
+    padding: 100;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 1000px;
+    height: 500px;
+    background: aquamarine;              
+    border: 2px solid black;      
+    border-radius: 16px;
+
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    flex-direction: row;      
+    gap: 20px;                
+}
+
+.circle {
+    background-color: greenyellow;
+    border: 2px solid black;       
+    border-radius: 50%;             
+    height: 100px;
+    width: 100px;
+
+    display: flex;                  
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}

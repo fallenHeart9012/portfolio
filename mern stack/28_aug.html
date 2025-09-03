@@ -5,11 +5,153 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Responsive Navigation Bar</title>
   <link rel="stylesheet" href="28_aug.css">
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: #f5f7fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Navbar */
+    header {
+      position: sticky;
+      top: 0;
+      width: 100%;
+      background: linear-gradient(90deg, #6a11cb, #2575fc);
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 50px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 30px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #ffe082;
+    }
+
+    /* Search box inside navbar */
+    .search-box {
+      display: flex;
+      align-items: center;
+      background: #fff;
+      border-radius: 20px;
+      padding: 5px 10px;
+      margin-left: 30px;
+    }
+
+    .search-box input {
+      border: none;
+      outline: none;
+      padding: 5px 10px;
+      font-size: 0.9rem;
+      border-radius: 20px;
+    }
+
+    .search-box button {
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      font-size: 1.2rem;
+    }
+
+    .hero {
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: linear-gradient(135deg, #89f7fe, #66a6ff);
+      color: #222;
+      padding: 20px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+
+    .hero h2 {
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: #333;
+    }
+
+    
+    footer {
+      background: #2d3436;
+      color: #dfe6e9;
+      text-align: center;
+      padding: 20px 50px;
+    }
+
+    footer #foot {
+      max-width: 900px;
+      margin: auto;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        padding: 15px 20px;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 10px;
+      }
+
+      .search-box {
+        margin: 15px 0 0 0;
+      }
+
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .hero h2 {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
 </head>
 <body>
 
   <header>
-    <div class="logo">Coding Lab</div>
+    <div class="logo">My Blog Website</div>
     <nav>
       <ul>
         <li><a href="E_comm.html">Home</a></li>
@@ -18,27 +160,53 @@
         <li><a href="27_aug.html">Contact Us</a></li>
       </ul>
     </nav>
+    <div class="search-box">
+      <input type="text" placeholder="Search here...">
+      <button>🔍</button>
+    </div>
   </header>
 
-
-
-   <div class="logo">Coding Lab</div>5
-
-  <div class="search-box">
-    <input type="text" placeholder="Search here!  ">
-    <button>🔍</button>
-  </div>
-
-
   <section class="hero">
-    <h1>Responsive <br> Navigation Bar</h1>
-    <h2>USING HTML AND CSS</h2>
+    <h5>locha - e - ulfat</h5>
+    <h2>Using HTML & CSS Only 🚀</h2>
   </section>
-  <br>
-  <br>
+
+<main style="padding:30px; line-height:1.6;">
+
+    <h2>Welcome</h2>
+    <p>This is a minimal blog layout using only HTML. Scroll down to see more content.</p>
+
+    <p>
+      <a href="https:instagram.com" target="_blank">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFGnweXWfWKNOXM3PAiXyj6tLQKOjheI2Nag&s" alt="Blog Banner">
+      </a>
+    </p>
+
+    <h2>Another Section</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec lorem nec purus gravida pharetra. Duis et turpis ut sapien malesuada aliquam.</p>
+
+    <h2>More Content</h2>
+    <p>Scroll further to make the page long enough. This ensures a proper header and footer feel.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae nunc vitae risus fermentum varius.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet tincidunt lorem. Nullam euismod gravida orci at tempus.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac ante eget turpis convallis tincidunt.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam venenatis urna sit amet purus sodales, eget egestas ex porttitor.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti. Curabitur vitae suscipit libero.</p>
+</main>
 
   <footer>
-    <div id="foot">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error illo cumque maxime totam praesentium corporis corrupti ea. Nihil quaerat beatae nulla quibusdam labore? Harum nulla tempore quam alias quidem. Est!</div>
+    <div id="foot">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error illo cumque maxime 
+      totam praesentium corporis corrupti ea. Nihil quaerat beatae nulla quibusdam labore? 
+      Harum nulla tempore quam alias quidem. Est!
+    </div>
   </footer>
 
 </body>
